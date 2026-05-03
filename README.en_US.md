@@ -32,7 +32,7 @@ yarn add @soulniko/utils
 Type-safe object manipulation functions:
 
 ```typescript
-import { keysOf, entriesOf, valuesOf } from "@soybeanjs/utils";
+import { keysOf, entriesOf, valuesOf } from "@soulniko/utils";
 
 const obj = { name: "John", age: 30 };
 

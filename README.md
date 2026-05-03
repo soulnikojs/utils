@@ -32,7 +32,7 @@ yarn add @soulniko/utils
 类型安全的对象操作函数：
 
 ```typescript
-import { keysOf, entriesOf, valuesOf } from "@soybeanjs/utils";
+import { keysOf, entriesOf, valuesOf } from "@soulniko/utils";
 
 const obj = { name: "John", age: 30 };
 
