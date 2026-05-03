@@ -1,26 +1,30 @@
 {
-  "name": "@soulnikojs/utils",
-  "version": "0.0.1",
-  "description": "A collection of useful utility functions for JavaScript and TypeScript projects of SoulnikoJs.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/soulnikojs/utils.git"
-  },
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/soulnikojs/utils/issues"
-  },
-  "homepage": "https://github.com/soulnikojs/utils#readme",
-  "author": {
-    "name": "Soulniko",
-    "email": "shweblee@gmail.com",
-    "url": "https://github.com/soulnikojs"
-  },
-  "dependencies": {
-    "typescript": "^6.0.3"
-  }
+	"name": "@soulnikojs/utils",
+	"version": "0.0.1",
+	"description": "A collection of useful utility functions for JavaScript and TypeScript projects of SoulnikoJs.",
+	"main": "index.js",
+	"scripts": {
+		"format": "prettier --write src/",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/soulnikojs/utils.git"
+	},
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/soulnikojs/utils/issues"
+	},
+	"homepage": "https://github.com/soulnikojs/utils#readme",
+	"author": {
+		"name": "Soulniko",
+		"email": "shweblee@gmail.com",
+		"url": "https://github.com/soulnikojs"
+	},
+	"dependencies": {
+		"typescript": "^6.0.3"
+	},
+	"devDependencies": {
+		"prettier": "3.8.3"
+	}
 }
