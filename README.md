@@ -27,6 +27,25 @@ yarn add @soulniko/utils
 
 ## 使用方法
 
+### 对象工具
+
+类型安全的对象操作函数：
+
+```typescript
+import { keysOf, entriesOf, valuesOf } from "@soybeanjs/utils";
+
+const obj = { name: "John", age: 30 };
+
+// 获取对象键（带类型推断）
+const keys = keysOf(obj); // ('name' | 'age')[]
+
+// 获取对象条目（带类型推断）
+const entries = entriesOf(obj); // ['name' | 'age', string | number][]
+
+// 获取对象值（带类型推断）
+const values = valuesOf(obj); // (string | number)[]
+```
+
 ### 存储工具
 
 浏览器存储的类型安全封装（localStorage 和 sessionStorage）：
@@ -62,6 +81,12 @@ storage.clear();
 ```
 
 ## API 文档
+
+### 对象工具
+
+- `keysOf<T>(record: T): (keyof T)[]` - 获取对象的键（类型安全）
+- `entriesOf<T>(record: T): [keyof T, T[keyof T]][]` - 获取对象的条目（类型安全）
+- `valuesOf<T>(record: T): T[keyof T][]` - 获取对象的值（类型安全）
 
 ### 存储工具
 

@@ -27,6 +27,25 @@ yarn add @soulniko/utils
 
 ## Usage
 
+### Object Utilities
+
+Type-safe object manipulation functions:
+
+```typescript
+import { keysOf, entriesOf, valuesOf } from "@soybeanjs/utils";
+
+const obj = { name: "John", age: 30 };
+
+// Get object keys (with type inference)
+const keys = keysOf(obj); // ('name' | 'age')[]
+
+// Get object entries (with type inference)
+const entries = entriesOf(obj); // ['name' | 'age', string | number][]
+
+// Get object values (with type inference)
+const values = valuesOf(obj); // (string | number)[]
+```
+
 ### Storage Utilities
 
 Type-safe wrapper for browser storage (localStorage and sessionStorage):
@@ -62,6 +81,12 @@ storage.clear();
 ```
 
 ## API Documentation
+
+### Object Utilities
+
+- `keysOf<T>(record: T): (keyof T)[]` - Get object keys (type-safe)
+- `entriesOf<T>(record: T): [keyof T, T[keyof T]][]` - Get object entries (type-safe)
+- `valuesOf<T>(record: T): T[keyof T][]` - Get object values (type-safe)
 
 ### Storage Utilities
 
