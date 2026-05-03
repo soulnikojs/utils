@@ -1,18 +1,26 @@
 {
 	"name": "@souljs/utils",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "A collection of useful utility functions for JavaScript and TypeScript projects of SoulnikoJs.",
 	"files": [
 		"dist"
 	],
+	"type": "module",
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"require": "./dist/index.js"
+		}
+	},
 	"scripts": {
 		"build": "tsdown",
 		"prepare": "husky",
 		"format": "prettier --write src/",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"publish-pkg": "npm publish --access public"
 	},
 	"repository": {
 		"type": "git",
