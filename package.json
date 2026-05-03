@@ -1,9 +1,15 @@
 {
-	"name": "@soulnikojs/utils",
+	"name": "@souljs/utils",
 	"version": "0.0.1",
 	"description": "A collection of useful utility functions for JavaScript and TypeScript projects of SoulnikoJs.",
-	"main": "index.js",
+	"files": [
+		"dist"
+	],
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
 	"scripts": {
+		"build": "tsdown",
 		"prepare": "husky",
 		"format": "prettier --write src/",
 		"test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +18,7 @@
 		"type": "git",
 		"url": "git+https://github.com/soulnikojs/utils.git"
 	},
-	"license": "ISC",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/soulnikojs/utils/issues"
 	},
@@ -33,6 +39,7 @@
 	"devDependencies": {
 		"husky": "^9.1.7",
 		"lint-staged": "^16.4.0",
-		"prettier": "3.8.3"
+		"prettier": "3.8.3",
+		"tsdown": "^0.21.10"
 	}
 }
