@@ -19,5 +19,8 @@
     "name": "Soulniko",
     "email": "shweblee@gmail.com",
     "url": "https://github.com/soulnikojs"
+  },
+  "dependencies": {
+    "typescript": "^6.0.3"
   }
 }
